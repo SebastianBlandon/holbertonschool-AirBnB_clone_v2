@@ -15,4 +15,4 @@ def do_pack():
               format(timestr))
         return ("versions/web_static_{}.tgz".format(timestr))
     except Exception as error:
-        return None
+        return (None)
