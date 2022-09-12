@@ -11,7 +11,7 @@ env.hosts = ['52.90.98.156', '52.207.85.204']
 
 
 def do_deploy(archive_path):
-    """ deploy """
+    """ Deploy web static """
     if (os.path.isfile(archive_path) is False):
         return False
 

@@ -12,6 +12,7 @@ env.hosts = ['3.88.198.237', '54.83.236.78']
 
 
 def do_pack():
+    """ Pack the contents of the web_static folder """
     timestr = time.strftime("%Y%m%d%H%M%S")
     try:
         local("mkdir -p versions")
@@ -23,7 +24,7 @@ def do_pack():
 
 
 def do_deploy(archive_path):
-    """ deploy """
+    """ Do deploy web static """
     if (os.path.isfile(archive_path) is False):
         return False
 
@@ -45,6 +46,7 @@ def do_deploy(archive_path):
 
 
 def deploy():
+    """ Deploy web static """
     try:
         archive_address = do_pack()
         val = do_deploy(archive_address)
