@@ -3,8 +3,10 @@
     List of states!
 """
 
-from models.engine import storage
+from models import storage
 from flask import Flask, render_template
+
+
 app = Flask(__name__)
 
 
