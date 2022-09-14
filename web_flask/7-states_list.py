@@ -51,7 +51,7 @@ def states_list():
 
 
 @app.teardown_appcontext
-def teardown(err):
+def teardown(response):
     storage.close()
 
 
