@@ -18,6 +18,7 @@ def hbnb():
 
 @app.route("/c/<text>")
 def c_is_fun(text):
+    """ C route """
     return "C {}".format(text.replace("_", " "))
 
 
